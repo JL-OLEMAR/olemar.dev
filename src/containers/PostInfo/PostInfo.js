@@ -1,5 +1,8 @@
 import React, { useContext } from 'react'
-import { useParams, useLocation } from 'react-router-dom'
+import {
+  useParams
+  // useLocation
+} from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import PortableText from '@sanity/block-content-to-react'
 import AppContext from '../../context/AppContext'
@@ -8,7 +11,8 @@ import useSerializers from '../../hooks/useSerializers'
 import { PinnedMessage } from '../../components'
 import NotFound from '../NotFound/NotFound'
 
-import { PostHeader, PostImage, PostMeta, PostShare } from './PostInfo.styles'
+import { PostHeader, PostImage, PostMeta } from './PostInfo.styles'
+// import { PostHeader, PostImage, PostMeta, PostShare } from './PostInfo.styles'
 import {
   Container,
   TitleContainer,
@@ -21,19 +25,20 @@ import {
 
 const ProjectInfo = () => {
   const {
-    state: { posts, icons }
+    state: { posts }
+    // state: { posts, icons }
   } = useContext(AppContext)
 
   const { slug } = useParams()
-  const { pathname } = useLocation()
+  // const { pathname } = useLocation()
 
   const serializers = useSerializers()
 
   const singlePost = posts.find((post) => post.slug === slug)
 
-  const twitterLogo = icons.find((icon) => icon.alt === 'Twitter')
-  const linkedinLogo = icons.find((icon) => icon.alt === 'LinkedIn')
-  const facebookLogo = icons.find((icon) => icon.alt === 'Facebook')
+  // const twitterLogo = icons.find((icon) => icon.alt === 'Twitter')
+  // const linkedinLogo = icons.find((icon) => icon.alt === 'LinkedIn')
+  // const facebookLogo = icons.find((icon) => icon.alt === 'Facebook')
 
   const dateOptions = {
     month: 'long',
@@ -94,7 +99,7 @@ const ProjectInfo = () => {
           </Container>
         </MainSection>
 
-        <PostShare>
+        {/* <PostShare>
           <div className='slideUp delay-6'>
             <a
               href={`https://twitter.com/intent/tweet?text=${singlePost.title}%20by%20@Joseluisolemar%0Ahttps://olemar.dev${pathname}`}
@@ -118,7 +123,7 @@ const ProjectInfo = () => {
               <img src={facebookLogo.url} alt='Share to Facebook' />
             </a>
           </div>
-        </PostShare>
+        </PostShare> */}
       </>
     )
     : (
