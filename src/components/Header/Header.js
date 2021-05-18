@@ -69,6 +69,8 @@ const Header = ({ hasArrow }) => {
     }, 700)
   }
 
+  const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
+
   return (
     <>
       <HeaderBackground
@@ -116,7 +118,7 @@ const Header = ({ hasArrow }) => {
           <Menu handleClick={handleClick}>
             <MenuItem>
               <a href={`${cv}?dl`} className='slideUp duration-3 delay-4'>
-                Download CV <img src={icons.url} alt={icons.alt} />
+                Download CV <img src={arrowIcon.url} alt={arrowIcon.alt} />
               </a>
             </MenuItem>
           </Menu>

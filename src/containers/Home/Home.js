@@ -19,7 +19,7 @@ const Home = () => {
     }
   } = useContext(AppContext)
 
-  const PurpleArrow = icons.find((icon) => icon.alt === 'Purple Arrow')
+  const purpleArrowIcon = icons.find((icon) => icon.alt === 'PurpleArrow')
 
   return (
     <>
@@ -42,7 +42,7 @@ const Home = () => {
             <div className='overflow--hidden'>
               <HeroLink className='slideUp delay-4' to='/portfolio'>
                 See the latest projects I&apos;ve been working on{' '}
-                <img src={PurpleArrow.url} alt={PurpleArrow.alt} />
+                <img src={purpleArrowIcon.url} alt={purpleArrowIcon.alt} />
               </HeroLink>
             </div>
           </Hero>

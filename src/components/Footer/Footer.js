@@ -3,7 +3,6 @@ import AppContext from '../../context/AppContext'
 
 import Menu from '../Menu/Menu'
 import SocialMenu from '../SocialMenu/SocialMenu'
-// import heartIcon from '../../images/icons/heartIcon.svg'
 
 import {
   FooterContainer,
