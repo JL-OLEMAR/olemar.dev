@@ -4,7 +4,7 @@
 
 ## ✨ Preview
 
-Deploy: [olemar.dev](https://olemar.dev)
+Deploy: [olemar.dev](https://olemar.netlify.app/)
 ## 🖥 About
 
 This project is my personal website. The main goal was to have a place to showcase my work and where people might know me better.
