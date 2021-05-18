@@ -13,7 +13,7 @@ const SingleProject = ({ project }) => {
   } = useContext(AppContext)
 
   const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
-  const purpleArrowIcon = icons.find((icon) => icon.alt === 'Purple Arrow')
+  const purpleArrowIcon = icons.find((icon) => icon.alt === 'PurpleArrow')
   const linkIcon = icons.find((icon) => icon.alt === 'External Link')
   const githubLogo = icons.find((icon) => icon.alt === 'GitHub')
 
