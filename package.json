@@ -5,6 +5,7 @@
   "private": true,
   "author": "José Olemar",
   "license": "ISC",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
