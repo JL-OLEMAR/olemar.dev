@@ -4,7 +4,7 @@
 
 ## ✨ Preview
 
-Deploy: [olemar.dev](https://olemar.vercel.app/)
+Deploy: [José Olemar](https://www.jose-olemar.com/)
 ## 🖥 About
 
 This project is my personal website. The main goal was to have a place to showcase my work and where people might know me better.
@@ -28,5 +28,5 @@ Feel free to send me a DM on **[Twitter](https://twitter.com/Joseluisolemar)** i
 
 ## 📃 License
 
-Copyright © 2021 [José Olemar](https://github.com/JL-OLEMAR/).<br />
+Copyright © 2022 [José Olemar](https://github.com/JL-OLEMAR/).<br />
 This project is [MIT](https://github.com/JL-OLEMAR/olemar.dev/blob/master/LICENSE) licensed.
