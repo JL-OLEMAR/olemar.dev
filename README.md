@@ -4,7 +4,7 @@
 
 ## ✨ Preview
 
-Deploy: [José Olemar](https://www.jose-olemar.com/)
+Deploy: [José Olemar](https://jose-olemar.com)
 ## 🖥 About
 
 This project is my personal website. The main goal was to have a place to showcase my work and where people might know me better.
