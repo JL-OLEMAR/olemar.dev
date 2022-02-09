@@ -24,10 +24,7 @@ const About = () => {
   } = useContext(AppContext)
 
   const serializers = useSerializers()
-
-  const { message } = pinnedMessages.find(
-    (pinnedMessage) => pinnedMessage.page === 'About'
-  )
+  const { message } = pinnedMessages.find((pinnedMessage) => pinnedMessage.page === 'About')
 
   return (
     <>

@@ -30,7 +30,6 @@ const App = () => {
               <SleepScreen />
               <ScrollToTop />
               <Switch>
-                <RouteWrapper exact path='/' component={Home} isHome />
                 <RouteWrapper exact path='/portfolio' component={Portfolio} />
                 <RouteWrapper
                   exact
@@ -52,6 +51,7 @@ const App = () => {
                   component={TagInfo}
                 />
                 <RouteWrapper exact path='/about' component={About} />
+                <RouteWrapper exact path='/' component={Home} isHome />
                 <RouteWrapper component={NotFound} />
               </Switch>
             </Router>

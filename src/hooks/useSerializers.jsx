@@ -7,10 +7,7 @@ import imageUrlFor from '../utils/imageUrlFor'
 import { LinkList, ListItem, Icon } from '../shared'
 
 const useSerializers = () => {
-  const {
-    state: { icons }
-  } = useContext(AppContext)
-
+  const { state: { icons } } = useContext(AppContext)
   const linkIcon = icons.find((icon) => icon.alt === 'External Link')
 
   return {
