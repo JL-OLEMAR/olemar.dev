@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
-
+import { useState, useRef, useEffect } from 'react'
 import SleepScreenContainer from './SleepScreen.styles'
 
 const SleepScreen = () => {

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-
 import { fadeIn, slideUp } from './animations'
 
 const GlobalStyle = createGlobalStyle`

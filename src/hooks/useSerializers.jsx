@@ -1,5 +1,4 @@
-/* eslint-disable react/display-name */
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import AppContext from '../context/AppContext'
 import imageUrlFor from '../utils/imageUrlFor'

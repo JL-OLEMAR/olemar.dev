@@ -1,6 +1,5 @@
 import React from 'react'
 import useInitialState from '../hooks/useInitialState'
-
 import Loader from '../components/Loader/Loader'
 
 const AppContext = React.createContext({})

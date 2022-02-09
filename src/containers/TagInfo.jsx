@@ -1,17 +1,13 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import AppContext from '../context/AppContext'
 
 import { Posts, PinnedMessage } from '../components'
-
 import { TitleContainer, Title } from '../shared'
+import AppContext from '../context/AppContext'
 
 const TagInfo = () => {
-  const {
-    state: { pinnedMessages, posts }
-  } = useContext(AppContext)
-
+  const { state: { pinnedMessages, posts } } = useContext(AppContext)
   const { slug } = useParams()
 
   const { message } = pinnedMessages.find(

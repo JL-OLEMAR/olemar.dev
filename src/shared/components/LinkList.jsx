@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import Icon from './Icon'
 
 const LinkList = styled.ul`

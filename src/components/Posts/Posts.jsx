@@ -1,9 +1,6 @@
-import React from 'react'
-
 import SinglePost from '../SinglePost/SinglePost'
-
-import PostsContainer from './Posts.styles'
 import { Container, MainSection } from '../../shared'
+import PostsContainer from './Posts.styles'
 
 const Posts = ({ posts }) => {
   return (

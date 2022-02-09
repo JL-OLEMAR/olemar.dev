@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { LogoContainer } from '../../components/Header/Header.styles'
 
 const Arrow = styled.div`

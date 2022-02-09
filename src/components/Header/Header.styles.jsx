@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
-
 import setFont from '../../shared/mixins/setFont'
 
 export const HeaderBackground = styled.div`

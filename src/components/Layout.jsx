@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import MenuContext from '../context/MenuContext'
-
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 

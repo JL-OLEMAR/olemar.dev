@@ -1,11 +1,10 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Helmet } from 'react-helmet'
 import PortableText from '@sanity/block-content-to-react'
-import AppContext from '../context/AppContext'
-import useSerializers from '../hooks/useSerializers'
 
 import { PinnedMessage } from '../components'
-
+import AppContext from '../context/AppContext'
+import useSerializers from '../hooks/useSerializers'
 import {
   ArticleContainer,
   Article,

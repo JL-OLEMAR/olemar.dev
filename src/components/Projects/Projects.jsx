@@ -1,7 +1,4 @@
-import React from 'react'
-
 import SingleProject from '../SingleProject/SingleProject'
-
 import ProjectsContainer from './Projects.styles'
 import { Container, MainSection } from '../../shared'
 

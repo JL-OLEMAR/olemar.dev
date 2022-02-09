@@ -1,13 +1,12 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import PortableText from '@sanity/block-content-to-react'
-import AppContext from '../../context/AppContext'
-import useSerializers from '../../hooks/useSerializers'
 
 import { Window, PinnedMessage } from '../../components'
+import AppContext from '../../context/AppContext'
 import NotFound from '../NotFound/NotFound'
-
+import useSerializers from '../../hooks/useSerializers'
 import { ButtonOptions, CodeButton, PreviewButton } from './ProjectInfo.styles'
 import {
   Container,
@@ -20,16 +19,10 @@ import {
 } from '../../shared'
 
 const ProjectInfo = () => {
-  const {
-    state: { projects, icons }
-  } = useContext(AppContext)
-
+  const { state: { projects, icons } } = useContext(AppContext)
   const { slug } = useParams()
-
   const serializers = useSerializers()
-
   const singleProject = projects.find((project) => project.slug === slug)
-
   const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
   const githubLogo = icons.find((icon) => icon.alt === 'GitHub')
 

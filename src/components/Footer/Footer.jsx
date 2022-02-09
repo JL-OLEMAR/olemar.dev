@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
-
+import { useContext } from 'react'
 import { Container } from '../../shared'
-import { FooterContainer, FooterCopyright, FooterOptions } from './Footer.styles'
 import AppContext from '../../context/AppContext'
 import Menu from '../Menu/Menu'
 import SocialMenu from '../SocialMenu/SocialMenu'
+import { FooterContainer, FooterCopyright, FooterOptions } from './Footer.styles'
 
 const Footer = ({ isPost }) => {
   const fecha = new Date()

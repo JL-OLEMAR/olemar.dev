@@ -1,10 +1,8 @@
 {
-  "name": "joseolemar",
-  "version": "0.2.0",
-  "description": "My personal website",
-  "private": true,
+  "name": "olemar.dev",
+  "version": "1.0.0",
   "author": "José Olemar",
-  "license": "ISC",
+  "description": "https://jose-luis.com website",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +10,16 @@
     "preview": "vite preview",
     "lint": "standard --fix ."
   },
+  "homepage": "https://github.com/JL-OLEMAR/olemar.dev#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JL-OLEMAR/olemar.dev.git"
+  },
+  "bugs": { 
+    "url": "https://github.com/JL-OLEMAR/olemar.dev/issues"
+  },
+  "license": "ISC",  
+  "private": true,
   "dependencies": {
     "@sanity/block-content-to-react": "3.0.0",
     "@sanity/client": "3.0.4",

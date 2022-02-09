@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import AppContext from '../../context/AppContext'
 
+import AppContext from '../../context/AppContext'
 import { MenuContainer, MenuItem } from './Menu.styles'
 
 const Menu = ({ children, handleClick, isFooter }) => {

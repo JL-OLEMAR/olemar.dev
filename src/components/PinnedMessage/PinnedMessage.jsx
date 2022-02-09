@@ -1,7 +1,5 @@
-import React from 'react'
-
-import Message from './PinnedMessage.styles'
 import { Container } from '../../shared'
+import Message from './PinnedMessage.styles'
 
 const PinnedMessage = ({ message, isAbout }) => {
   return (

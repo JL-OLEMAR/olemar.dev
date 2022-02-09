@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-
 import setPosition from '../mixins/setPosition'
 
 export const Grid = styled.div`

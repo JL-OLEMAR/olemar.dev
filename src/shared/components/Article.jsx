@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import Icon from './Icon'
 
 export const ArticleContainer = styled.section`

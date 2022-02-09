@@ -1,11 +1,9 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
+import { Icon } from '../../shared'
 import { Link } from 'react-router-dom'
 import AppContext from '../../context/AppContext'
-
 import Window from '../Window/Window'
-
 import ProjectOptions from './SingleProject.styles'
-import { Icon } from '../../shared'
 
 const SingleProject = ({ project }) => {
   const {

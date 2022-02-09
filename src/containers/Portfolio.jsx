@@ -1,16 +1,12 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Helmet } from 'react-helmet'
-import AppContext from '../context/AppContext'
 
 import { Projects, PinnedMessage } from '../components'
-
 import { TitleContainer, Title } from '../shared'
+import AppContext from '../context/AppContext'
 
 const Portfolio = () => {
-  const {
-    state: { pinnedMessages, projects }
-  } = useContext(AppContext)
-
+  const { state: { pinnedMessages, projects } } = useContext(AppContext)
   const { message } = pinnedMessages.find(
     (pinnedMessage) => pinnedMessage.page === 'Portfolio'
   )

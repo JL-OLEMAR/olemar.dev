@@ -1,8 +1,7 @@
-import React, { useContext } from 'react'
-import AppContext from '../../context/AppContext'
-
-import { SocialMenuContainer, SocialMenuItem } from './SocialMenu.styles'
+import { useContext } from 'react'
 import { Icon } from '../../shared'
+import AppContext from '../../context/AppContext'
+import { SocialMenuContainer, SocialMenuItem } from './SocialMenu.styles'
 
 const SocialMenu = ({ isFooter }) => {
   const { state } = useContext(AppContext)

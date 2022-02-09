@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Helmet } from 'react-helmet'
-import AppContext from '../context/AppContext'
 
 import { Posts, PinnedMessage } from '../components'
-
 import { TitleContainer, Title } from '../shared'
+import AppContext from '../context/AppContext'
 
 const Blog = () => {
   const {

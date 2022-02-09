@@ -1,7 +1,4 @@
-import React from 'react'
-
 import Carousel from '../Carousel/Carousel'
-
 import { WindowContainer, WindowBar, WindowScreen } from './Window.styles'
 
 const Window = ({ project, children, isCarousel }) => {

@@ -1,11 +1,11 @@
-import React, { useContext, useState, useRef } from 'react'
+import { useContext, useState, useRef } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 
 import AppContext from '../../context/AppContext'
-import MenuContext from '../../context/MenuContext'
-import useScroll from '../../hooks/useScroll'
 import Menu from '../Menu/Menu'
+import MenuContext from '../../context/MenuContext'
 import SocialMenu from '../SocialMenu/SocialMenu'
+import useScroll from '../../hooks/useScroll'
 import {
   HeaderBackground,
   LogoContainer,
@@ -16,8 +16,8 @@ import {
   MenuContainer,
   BurgerButton
 } from './Header.styles'
-import { MenuItem } from '../Menu/Menu.styles'
 import { Arrow } from '../../shared'
+import { MenuItem } from '../Menu/Menu.styles'
 
 const Header = ({ hasArrow }) => {
   const { menu, setMenu } = useContext(MenuContext)

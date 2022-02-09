@@ -1,12 +1,10 @@
-import React from 'react'
-
+import { Tag } from '../../shared'
 import {
   Post,
   PostBackground,
   PostContent,
   PostTitle
 } from './SinglePost.styles'
-import { Tag } from '../../shared'
 
 const SinglePost = ({ post }) => {
   const { title, slug, description, cover, tags, publishedAt } = post

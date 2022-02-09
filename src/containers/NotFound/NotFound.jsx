@@ -1,16 +1,13 @@
-import React, { useContext } from 'react'
-import { Helmet } from 'react-helmet'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import AppContext from '../../context/AppContext'
+import { Helmet } from 'react-helmet'
 
-import { ErrorContainer, ErrorMessage } from './NotFound.styles'
 import { MainSection } from '../../shared'
+import AppContext from '../../context/AppContext'
+import { ErrorContainer, ErrorMessage } from './NotFound.styles'
 
 const NotFound = () => {
-  const {
-    state: { icons }
-  } = useContext(AppContext)
-
+  const { state: { icons } } = useContext(AppContext)
   const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
 
   return (

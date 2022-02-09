@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Helmet } from 'react-helmet'
-import AppContext from '../../context/AppContext'
 
+import AppContext from '../../context/AppContext'
+import { MainSection, Container } from '../../shared'
 import {
   Hero,
   HeroTitle,
@@ -9,16 +10,9 @@ import {
   HeroLink,
   StyledFooter
 } from './Home.styles'
-import { MainSection, Container } from '../../shared'
 
 const Home = () => {
-  const {
-    state: {
-      author: { image },
-      icons
-    }
-  } = useContext(AppContext)
-
+  const { state: { author: { image }, icons } } = useContext(AppContext)
   const purpleArrowIcon = icons.find((icon) => icon.alt === 'PurpleArrow')
 
   return (
