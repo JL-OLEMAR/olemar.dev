@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { Arrow } from '../../shared'
 
 export const CarouselContainer = styled.div`

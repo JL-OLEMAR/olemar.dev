@@ -1,25 +1,28 @@
 import { useContext, useState, useRef } from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 import AppContext from '../../context/AppContext'
-import Menu from '../Menu/Menu'
 import MenuContext from '../../context/MenuContext'
-import SocialMenu from '../SocialMenu/SocialMenu'
 import useScroll from '../../hooks/useScroll'
+import Menu from '../Menu/Menu'
+import SocialMenu from '../SocialMenu/SocialMenu'
+import { Arrow } from '../../shared'
+import { MenuItem } from '../Menu/Menu.styles'
 import {
+  BurgerButton,
   HeaderBackground,
   LogoContainer,
   LogoText,
+  MenuContainer,
   Navbar,
   NavbarButton,
-  NavbarMenu,
-  MenuContainer,
-  BurgerButton
+  NavbarMenu
 } from './Header.styles'
-import { Arrow } from '../../shared'
-import { MenuItem } from '../Menu/Menu.styles'
 
 const Header = ({ hasArrow }) => {
+  const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const { header, background } = useScroll()
   const { menu, setMenu } = useContext(MenuContext)
   const { state } = useContext(AppContext)
   const { author: { cv }, icons } = state
@@ -32,10 +35,7 @@ const Header = ({ hasArrow }) => {
   const goRef = useRef(goState)
   goRef.current = goState
 
-  const history = useHistory()
-  const { pathname } = useLocation()
-
-  const { header, background } = useScroll()
+  const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
 
   const handleClick = () => {
     setMenu(!menu)
@@ -50,22 +50,17 @@ const Header = ({ hasArrow }) => {
         setGoState(!goRef.current)
       }
     }, 300)
+
     setTimeout(() => {
       const isPortfolio = pathname.includes('/portfolio')
-
-      if (isPortfolio) {
-        history.push('/portfolio')
-      } else {
-        history.push('/blog')
-      }
+      isPortfolio ? navigate('/portfolio') : navigate('/blog')
     }, 600)
+
     setTimeout(() => {
       setArrowState(!arrowRef.current)
       setGoState(!goRef.current)
     }, 700)
   }
-
-  const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
 
   return (
     <>

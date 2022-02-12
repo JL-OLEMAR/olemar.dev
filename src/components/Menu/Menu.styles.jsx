@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { setFont } from '../../shared'
 
 export const MenuContainer = styled.ul`

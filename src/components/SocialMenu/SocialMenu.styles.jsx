@@ -1,8 +1,6 @@
 import styled from 'styled-components'
-
-import { MenuItem } from '../Menu/Menu.styles'
-
 import { setFont } from '../../shared'
+import { MenuItem } from '../Menu/Menu.styles'
 
 export const SocialMenuContainer = styled.ul`
   ${({ theme }) => setFont(theme.sizes.m, 600)}

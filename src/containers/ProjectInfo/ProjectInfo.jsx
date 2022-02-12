@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import PortableText from '@sanity/block-content-to-react'
 
-import { Window, PinnedMessage } from '../../components'
 import AppContext from '../../context/AppContext'
-import NotFound from '../NotFound/NotFound'
 import useSerializers from '../../hooks/useSerializers'
+import { Window, PinnedMessage } from '../../components'
+import NotFound from '../NotFound/NotFound'
 import { ButtonOptions, CodeButton, PreviewButton } from './ProjectInfo.styles'
 import {
   Container,

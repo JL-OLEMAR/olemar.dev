@@ -3,13 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import AppContext from '../../context/AppContext'
 import { MainSection, Container } from '../../shared'
-import {
-  Hero,
-  HeroTitle,
-  HeroDescription,
-  HeroLink,
-  StyledFooter
-} from './Home.styles'
+import { Hero, HeroDescription, HeroLink, HeroTitle, StyledFooter } from './Home.styles'
 
 const Home = () => {
   const { state: { author: { image }, icons } } = useContext(AppContext)

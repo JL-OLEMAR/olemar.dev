@@ -1,18 +1,13 @@
 import { useContext } from 'react'
 import { Helmet } from 'react-helmet'
 
+import AppContext from '../context/AppContext'
 import { Posts, PinnedMessage } from '../components'
 import { TitleContainer, Title } from '../shared'
-import AppContext from '../context/AppContext'
 
 const Blog = () => {
-  const {
-    state: { pinnedMessages, posts }
-  } = useContext(AppContext)
-
-  const { message } = pinnedMessages.find(
-    (pinnedMessage) => pinnedMessage.page === 'Blog'
-  )
+  const { state: { pinnedMessages, posts } } = useContext(AppContext)
+  const { message } = pinnedMessages.find(({ page }) => page === 'Blog')
 
   return (
     <>

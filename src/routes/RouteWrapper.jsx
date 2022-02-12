@@ -1,22 +1,10 @@
-import { Route } from 'react-router-dom'
 import { Layout } from '../components'
 
-const RouteWrapper = ({
-  component: Component,
-  hasArrow,
-  isHome,
-  isPost,
-  ...rest
-}) => {
+const RouteWrapper = ({ children, hasArrow, isHome, isPost }) => {
   return (
-    <Route
-      {...rest}
-      render={() => (
-        <Layout hasArrow={hasArrow} isHome={isHome} isPost={isPost}>
-          <Component />
-        </Layout>
-      )}
-    />
+    <Layout hasArrow={hasArrow} isHome={isHome} isPost={isPost}>
+      {children}
+    </Layout>
   )
 }
 

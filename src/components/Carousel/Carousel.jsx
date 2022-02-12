@@ -1,6 +1,6 @@
-import { CarouselContainer, CarouselContent, CarouselControl, CarouselDots } from './Carousel.styles'
-import { Arrow } from '../../shared'
 import useCarousel from '../../hooks/useCarousel'
+import { Arrow } from '../../shared'
+import { CarouselContainer, CarouselContent, CarouselControl, CarouselDots } from './Carousel.styles'
 
 const Carousel = ({ images }) => {
   const { slide, prevSlide, nextSlide, handleDotClick } = useCarousel(images)

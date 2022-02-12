@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { Icon } from '../../shared'
 import AppContext from '../../context/AppContext'
+import { Icon } from '../../shared'
 import { SocialMenuContainer, SocialMenuItem } from './SocialMenu.styles'
 
 const SocialMenu = ({ isFooter }) => {

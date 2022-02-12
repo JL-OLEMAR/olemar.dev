@@ -1,21 +1,19 @@
 import { useContext } from 'react'
-import { Icon } from '../../shared'
 import { Link } from 'react-router-dom'
+
 import AppContext from '../../context/AppContext'
 import Window from '../Window/Window'
+import { Icon } from '../../shared'
 import ProjectOptions from './SingleProject.styles'
 
 const SingleProject = ({ project }) => {
-  const {
-    state: { icons }
-  } = useContext(AppContext)
+  const { state: { icons } } = useContext(AppContext)
+  const { codeUrl, previewUrl, slug } = project
 
   const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
   const purpleArrowIcon = icons.find((icon) => icon.alt === 'PurpleArrow')
   const linkIcon = icons.find((icon) => icon.alt === 'External Link')
   const githubLogo = icons.find((icon) => icon.alt === 'GitHub')
-
-  const { codeUrl, previewUrl, slug } = project
 
   return (
     <Window project={project}>
@@ -32,7 +30,8 @@ const SingleProject = ({ project }) => {
             Live Preview
             <img src={arrowIcon.url} alt={arrowIcon.alt} />
           </a>
-          <Link to={`portfolio/${slug}`}>
+          {/* <Link to={`portfolio/${slug}`} > */}
+          <Link to={`${slug}`}>
             Learn more...{' '}
             <img src={purpleArrowIcon.url} alt={purpleArrowIcon.alt} />
           </Link>

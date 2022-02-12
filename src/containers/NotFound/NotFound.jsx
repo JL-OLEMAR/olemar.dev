@@ -2,8 +2,8 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-import { MainSection } from '../../shared'
 import AppContext from '../../context/AppContext'
+import { MainSection } from '../../shared'
 import { ErrorContainer, ErrorMessage } from './NotFound.styles'
 
 const NotFound = () => {

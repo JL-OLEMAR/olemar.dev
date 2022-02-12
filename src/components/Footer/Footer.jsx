@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import { Container } from '../../shared'
 import AppContext from '../../context/AppContext'
 import Menu from '../Menu/Menu'
+import { Container } from '../../shared'
 import SocialMenu from '../SocialMenu/SocialMenu'
 import { FooterContainer, FooterCopyright, FooterOptions } from './Footer.styles'
 

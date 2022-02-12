@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { setFlex, setFont } from '../../shared'
 
 export const ButtonOptions = styled.div`

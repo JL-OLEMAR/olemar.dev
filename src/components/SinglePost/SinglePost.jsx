@@ -1,10 +1,5 @@
 import { Tag } from '../../shared'
-import {
-  Post,
-  PostBackground,
-  PostContent,
-  PostTitle
-} from './SinglePost.styles'
+import { Post, PostBackground, PostContent, PostTitle } from './SinglePost.styles'
 
 const SinglePost = ({ post }) => {
   const { title, slug, description, cover, tags, publishedAt } = post
@@ -28,12 +23,13 @@ const SinglePost = ({ post }) => {
         </span>
         <p>{description}</p>
         <div>
-          {tags.map((tag) => (
-            <Tag to={`/blog/tag/${tag.name.toLowerCase()}`} key={tag._id}>
-              <span>#</span>
-              <span>{tag.name}</span>
-            </Tag>
-          ))}
+          {(tags) &&
+            tags.map((tag) => (
+              <Tag to={`/blog/tag/${tag.name.toLowerCase()}`} key={tag._id}>
+                <span>#</span>
+                <span>{tag.name}</span>
+              </Tag>
+            ))}
         </div>
       </PostContent>
     </Post>

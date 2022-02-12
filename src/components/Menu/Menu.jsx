@@ -6,7 +6,6 @@ import { MenuContainer, MenuItem } from './Menu.styles'
 
 const Menu = ({ children, handleClick, isFooter }) => {
   const { state: { icons } } = useContext(AppContext)
-
   const arrowIcon = icons.find((icon) => icon.alt === 'Arrow')
 
   return (

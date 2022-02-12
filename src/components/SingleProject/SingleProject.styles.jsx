@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { setFlex, setFont, Icon } from '../../shared'
 
 const ProjectOptions = styled.div`

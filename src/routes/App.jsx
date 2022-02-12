@@ -1,21 +1,12 @@
-import { BrowserRouter as Router, Switch } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
 import { AppContextProvider } from '../context/AppContext'
 import { MenuContextProvider } from '../context/MenuContext'
-import { SleepScreen, ScrollToTop } from '../components'
-import { theme, GlobalStyle, Background } from '../shared'
 import RouteWrapper from './RouteWrapper'
-import {
-  Home,
-  Portfolio,
-  ProjectInfo,
-  Blog,
-  PostInfo,
-  TagInfo,
-  About,
-  NotFound
-} from '../containers'
+import { SleepScreen, ScrollToTop } from '../components'
+import { Home, Portfolio, ProjectInfo, Blog, PostInfo, TagInfo, About, NotFound } from '../containers'
+import { theme, GlobalStyle, Background } from '../shared'
 
 const App = () => {
   return (
@@ -23,37 +14,86 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <AppContextProvider>
           <MenuContextProvider>
-            <Router>
+            <BrowserRouter>
               <GlobalStyle />
               <Background />
               <SleepScreen />
               <ScrollToTop />
-              <Switch>
-                <RouteWrapper exact path='/' component={Home} isHome />
-                <RouteWrapper exact path='/portfolio' component={Portfolio} />
-                <RouteWrapper
-                  exact
-                  path='/portfolio/:slug'
-                  component={ProjectInfo}
-                  hasArrow
+
+              <Routes>
+                <Route
+                  path='/'
+                  element={
+                    <RouteWrapper isHome>
+                      <Home />
+                    </RouteWrapper>
+                  }
                 />
-                <RouteWrapper exact path='/blog' component={Blog} />
-                <RouteWrapper
-                  exact
-                  path='/blog/:slug'
-                  component={PostInfo}
-                  hasArrow
-                  isPost
+
+                <Route
+                  path='portfolio'
+                  element={
+                    <RouteWrapper>
+                      <Portfolio />
+                    </RouteWrapper>
+                  }
                 />
-                <RouteWrapper
-                  exact
-                  path='/blog/tag/:slug'
-                  component={TagInfo}
+
+                <Route
+                  path='portfolio/:slug'
+                  element={
+                    <RouteWrapper hasArrow>
+                      <ProjectInfo />
+                    </RouteWrapper>
+                  }
                 />
-                <RouteWrapper exact path='/about' component={About} />
-                <RouteWrapper component={NotFound} />
-              </Switch>
-            </Router>
+
+                <Route
+                  path='blog'
+                  element={
+                    <RouteWrapper>
+                      <Blog />
+                    </RouteWrapper>
+                  }
+                />
+
+                <Route
+                  path='blog/:slug'
+                  element={
+                    <RouteWrapper hasArrow isPost>
+                      <PostInfo />
+                    </RouteWrapper>
+                  }
+                />
+
+                <Route
+                  path='blog/tag/:slug'
+                  element={
+                    <RouteWrapper>
+                      <TagInfo />
+                    </RouteWrapper>
+                  }
+                />
+
+                <Route
+                  path='about'
+                  element={
+                    <RouteWrapper>
+                      <About />
+                    </RouteWrapper>
+                  }
+                />
+
+                <Route
+                  path='/*'
+                  element={
+                    <RouteWrapper>
+                      <NotFound />
+                    </RouteWrapper>
+                  }
+                />
+              </Routes>
+            </BrowserRouter>
           </MenuContextProvider>
         </AppContextProvider>
       </ThemeProvider>

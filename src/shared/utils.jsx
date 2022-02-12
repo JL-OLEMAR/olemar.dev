@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import setPosition from './mixins/setPosition'
 
 export const Background = styled.div`

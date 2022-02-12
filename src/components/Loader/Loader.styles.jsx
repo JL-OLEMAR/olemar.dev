@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { load } from '../../shared'
 
 export const LoaderContainer = styled.div`

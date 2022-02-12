@@ -4,7 +4,6 @@ import SleepScreenContainer from './SleepScreen.styles'
 const SleepScreen = () => {
   const sleepScreen = useRef(null)
   const sleepText = useRef(null)
-
   const [sleep, setSleep] = useState(false)
 
   useEffect(() => {

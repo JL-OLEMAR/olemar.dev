@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { setPosition, sleepScreen } from '../../shared'
 
 const SleepScreenContainer = styled.div`

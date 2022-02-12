@@ -1,11 +1,7 @@
 import styled, { css } from 'styled-components'
-
-import { MenuContainer, MenuItem } from '../Menu/Menu.styles'
-import {
-  SocialMenuContainer,
-  SocialMenuItem
-} from '../SocialMenu/SocialMenu.styles'
 import { setFlex, Icon } from '../../shared'
+import { SocialMenuContainer, SocialMenuItem } from '../SocialMenu/SocialMenu.styles'
+import { MenuContainer, MenuItem } from '../Menu/Menu.styles'
 
 export const FooterContainer = styled.footer`
   padding: 50px 0 20px;

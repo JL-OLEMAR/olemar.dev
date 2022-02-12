@@ -1,6 +1,5 @@
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
+import styled from 'styled-components'
 import { setFont } from '../../shared'
 
 export const PostBackground = styled.div`

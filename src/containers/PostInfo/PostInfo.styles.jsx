@@ -1,8 +1,6 @@
 import styled from 'styled-components'
-
-import Message from '../../components/PinnedMessage/PinnedMessage.styles'
-
 import { Title } from '../../shared'
+import Message from '../../components/PinnedMessage/PinnedMessage.styles'
 
 export const PostHeader = styled.div`
   margin-bottom: 40px;
