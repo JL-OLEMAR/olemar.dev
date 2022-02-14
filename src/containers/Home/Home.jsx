@@ -6,15 +6,14 @@ import AppContext from '../../context/AppContext'
 import { MainSection, Container } from '../../shared'
 import { Hero, HeroDescription, HeroLink, HeroTitle, StyledFooter } from './Home.styles'
 
-useEffect(() => {
-  ReactGa.initialize('G-LSN85707T9')
-  ReactGa.pageview(window.location.pathname + window.location.search)
-}, [])
-
 const Home = () => {
   const { state: { author: { image }, icons } } = useContext(AppContext)
   const purpleArrowIcon = icons.find((icon) => icon.alt === 'PurpleArrow')
 
+  useEffect(() => {
+    ReactGa.initialize('G-LSN85707T9')
+    ReactGa.pageview(window.location.pathname + window.location.search)
+  }, [])
   return (
     <>
       <Helmet>
