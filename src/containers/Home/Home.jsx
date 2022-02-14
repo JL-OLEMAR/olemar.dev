@@ -1,5 +1,4 @@
-import { useContext, useEffect } from 'react'
-import ReactGa from 'react-ga'
+import { useContext } from 'react'
 import { Helmet } from 'react-helmet'
 
 import AppContext from '../../context/AppContext'
@@ -10,10 +9,6 @@ const Home = () => {
   const { state: { author: { image }, icons } } = useContext(AppContext)
   const purpleArrowIcon = icons.find((icon) => icon.alt === 'PurpleArrow')
 
-  useEffect(() => {
-    ReactGa.initialize('G-LSN85707T9')
-    ReactGa.pageview(window.location.pathname + window.location.search)
-  }, [])
   return (
     <>
       <Helmet>
