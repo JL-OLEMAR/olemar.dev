@@ -15,10 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/JL-OLEMAR/olemar.dev.git"
   },
-  "bugs": { 
+  "bugs": {
     "url": "https://github.com/JL-OLEMAR/olemar.dev/issues"
   },
-  "license": "ISC",  
+  "license": "ISC",
   "private": true,
   "dependencies": {
     "@sanity/block-content-to-react": "3.0.0",
@@ -27,6 +27,7 @@
     "circular-dependency-plugin": "5.2.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-ga": "3.3.0",
     "react-helmet": "6.1.0",
     "react-router-dom": "6.2.1",
     "styled-components": "5.3.3"

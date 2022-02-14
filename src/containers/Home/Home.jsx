@@ -1,9 +1,15 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
+import ReactGa from 'react-ga'
 import { Helmet } from 'react-helmet'
 
 import AppContext from '../../context/AppContext'
 import { MainSection, Container } from '../../shared'
 import { Hero, HeroDescription, HeroLink, HeroTitle, StyledFooter } from './Home.styles'
+
+useEffect(() => {
+  ReactGa.initialize('G-LSN85707T9')
+  ReactGa.pageview(window.location.pathname + window.location.search)
+}, [])
 
 const Home = () => {
   const { state: { author: { image }, icons } } = useContext(AppContext)
