@@ -6,6 +6,8 @@
 
 Deploy: [José Olemar](https://jose-olemar.com)
 
+![José Olemar](https://cdn.sanity.io/images/42ldtbyz/production/94c48992cad43e47a8999b1d8860b9cbab12bc1b-478x268.gif?w=80&h=80&fit=crop&q=85)
+
 ## 🖥 About
 
 This project is my personal website. The main goal was to have a place to showcase my work and where people might know me better.
