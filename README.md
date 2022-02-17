@@ -21,7 +21,7 @@ Make sure to stay tuned for future improvements. 😉
 
 - **React**
 - **Styled-components**
-- - **Vitejs**
+- **Vitejs**
 - **Sanity**
 
 ## 🤝 Contributing
