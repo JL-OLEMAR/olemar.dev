@@ -25,47 +25,56 @@
 
     <style>
       @font-face {
-        font-display: swap;
         font-family: 'Saira';
         font-weight: 400;
-        src: url('/static/fonts/Saira-Regular.ttf');
+        font-display: swap;
+        src:
+          url('/static/fonts/saira-regular.woff2') format('woff2'),
+          url('/static/fonts/saira-regular.woff') format('woff'),
+          url('/static/fonts/saira-regular.ttf') format('truetype');
       }
 
       @font-face {
-        font-display: swap;
         font-family: 'Saira';
         font-weight: 500;
-        src: url('/static/fonts/Saira-Medium.ttf');
+        font-display: swap;
+        src: 
+          url('/static/fonts/saira-medium.woff2') format('woff2'),
+          url('/static/fonts/saira-medium.woff') format('woff'),
+          url('/static/fonts/saira-medium.ttf') format('truetype');
       }
 
       @font-face {
-        font-display: swap;
         font-family: 'Saira';
         font-weight: 600;
-        src: url('/static/fonts/Saira-SemiBold.ttf');
+        font-display: swap;
+        src: 
+          url('/static/fonts/saira-semiBold.woff2') format('woff2'),
+          url('/static/fonts/saira-semiBold.woff') format('woff'),
+          url('/static/fonts/saira-semiBold.ttf') format('truetype');
       }
     </style>
 
     <link
       as="font"
       crossorigin="anonymous"
-      href="/static/fonts/Saira-Regular.ttf"
+      href="/static/fonts/saira-regular.woff2"
       rel="preload"
-      type="font/ttf"
+      type="font/woff2"
     />
     <link
       as="font"
       crossorigin="anonymous"
-      href="/static/fonts/Saira-Medium.ttf"
+      href="/static/fonts/saira-medium.woff2"
       rel="preload"
-      type="font/ttf"
+      type="font/woff2"
     />
     <link
       as="font"
       crossorigin="anonymous"
-      href="/static/fonts/Saira-SemiBold.ttf"
+      href="/static/fonts/saira-semiBold.woff2"
       rel="preload"
-      type="font/ttf"
+      type="font/woff2"
     />
 
     <link rel="dns-prefetch" href="https://cdn.sanity.io" />
