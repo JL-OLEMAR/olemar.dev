@@ -16,7 +16,7 @@ const SocialMenu = ({ isFooter }) => {
     <SocialMenuContainer>
       <SocialMenuItem>
         <a
-          href='https://twitter.com/Joseluisolemar'
+          href='https://twitter.com/JoseLuisOlemar/'
           target='_blank'
           rel='noreferrer'
           className={`slideUp ${isFooter ? 'delay-6' : 'duration-3 delay-5'}`}
@@ -30,7 +30,7 @@ const SocialMenu = ({ isFooter }) => {
       </SocialMenuItem>
       <SocialMenuItem>
         <a
-          href='https://github.com/JL-OLEMAR'
+          href='https://github.com/JL-OLEMAR/'
           target='_blank'
           rel='noreferrer'
           className={`slideUp ${isFooter ? '' : 'duration-3'} delay-6`}
@@ -44,7 +44,7 @@ const SocialMenu = ({ isFooter }) => {
       </SocialMenuItem>
       <SocialMenuItem>
         <a
-          href='https://www.linkedin.com/in/jose-luis-olemar-velasquez'
+          href='https://www.linkedin.com/in/jose-luis-olemar/'
           target='_blank'
           rel='noreferrer'
           className={`slideUp ${isFooter ? 'delay-6' : 'duration-3 delay-7'}`}
